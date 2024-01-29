@@ -51,11 +51,11 @@ python src/main.py --exp-config=mmm3_s0 --config=cacom --env-config=sc2
 
 If you use this code in your research or find it helpful, please consider citing our paper:
 ```
-@article{li2023context,
+@article{li2024context,
   title={Context-aware Communication for Multi-agent Reinforcement Learning},
   author={Li, Xinran and Zhang, Jun},
-  journal={arXiv preprint arXiv:2312.15600},
-  year={2023}
+  booktitle={accepted by International Conference on Autonomous Agents and Multiagent Systems (AAMAS)},
+  year={2024}
 }
 ```
 
