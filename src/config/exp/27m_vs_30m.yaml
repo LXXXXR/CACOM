@@ -1,0 +1,27 @@
+exp_name: cacom_27m_vs_30m
+run_name: 27m_vs_30m_s0
+
+env_args:
+  map_name: 27m_vs_30m
+  seed: 0
+
+seed: 0
+
+encode_dim: 8
+request_dim: 12
+response_dim: 24
+obs_segs: 
+  - - 1
+    - 4
+  - - 15
+    - 10
+  - - 13
+    - 10
+  - - 1
+    - 1
+  - - 1
+    - 36
+  - - 1
+    - 27
+
+batch_size: 16 # this is due to the limited memory of our GPU

@@ -1,0 +1,49 @@
+# --- QMIX specific parameters ---
+
+save_model: True # Save the models to disk
+save_model_interval: 100_000 # Save models after this many timesteps
+
+# use epsilon greedy action selector
+action_selector: "epsilon_greedy"
+epsilon_start: 1.0
+epsilon_finish: 0.05
+epsilon_anneal_time: 50000
+
+runner: "episode"
+batch_size_run: 1 # Number of environments to run in parallel
+
+buffer_size: 5000
+
+# update the target network every {} episodes
+target_update_interval: 200
+
+# use the Q_Learner to train
+agent_output_type: "q"
+double_q: True
+mixer: "qmix"
+mixing_embed_dim: 32
+hypernet_layers: 2
+hypernet_embed: 64
+
+mac: "cacom_mac"
+agent: "cacom"
+learner: "cacom_learner"
+
+latent_dim: 8
+attention_dim: 32
+nn_hidden_size: 64
+mi_loss_weight: 0.001
+entropy_loss_weight: 0.01
+msg_l1_reg_loss_weight: 0
+var_floor: 0.002
+log_weights: True
+
+name: "cacom"
+
+pred_weight: 0.1
+discrete_bits: 2
+nn_hidden_multi: 4
+start_train_gate: 200_000
+cut_off_threshold: 0.0
+train_gate_intervel: 10_000
+gate_lr: 0.0001 # Learning rate for agents

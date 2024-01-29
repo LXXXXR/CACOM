@@ -1,0 +1,28 @@
+exp_name: cacom_MMM3
+run_name: mmm3_s0
+
+env_args:
+  map_name: MMM30
+  seed: 0
+
+seed: 0
+
+encode_dim: 8
+request_dim: 6
+response_dim: 13
+obs_segs: 
+  - - 1
+    - 4
+  - - 13
+    - 8
+  - - 9
+    - 8
+  - - 1
+    - 4
+  - - 1
+    - 19
+  - - 1
+    - 10
+
+
+

@@ -1,0 +1,25 @@
+exp_name: cacom_1c3s5z_vs_1c3s6z
+run_name: 1c3s5z_vs_1c3s6z_s0
+
+env_args:
+  map_name: 1c3s5z_vs_1c3s6z
+  seed: 0
+
+seed: 0
+
+encode_dim: 8
+request_dim: 4
+response_dim: 12
+obs_segs: 
+  - - 1
+    - 4
+  - - 10
+    - 9
+  - - 8
+    - 9
+  - - 1
+    - 5
+  - - 1
+    - 16
+  - - 1
+    - 9
